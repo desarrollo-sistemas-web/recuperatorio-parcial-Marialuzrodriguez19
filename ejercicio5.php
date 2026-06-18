@@ -6,6 +6,16 @@
 
 function obtenerDiaSemana($numero){
     //Escribe tu código aquí
+   if ($numero == 1) {
+        echo "lunes";
+    } elseif ($numero == 2) {
+        echo "martes";
+    } elseif ($numero == 3) {
+        echo "miercoles";
+    } elseif ($numero == 4) {
+        echo "jueves";
+    }
+    obtenerDiaSemana(1);
 }
 
 //Tests

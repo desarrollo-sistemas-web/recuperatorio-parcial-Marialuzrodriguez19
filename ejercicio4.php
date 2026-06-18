@@ -3,9 +3,14 @@
 // Ejercicio 4: Escribe una función llamada encontrarMaximo que tome un arreglo de números como parámetro y devuelva el valor máximo contenido en el arreglo.
 // Complejidad: MEDIA (2 puntos)
 
-function encontrarMaximo($numeros){
-    //Escribe tu código aquí
-
+function encontrarMaximo($arreglo) {
+    $maximo = $arreglo[0];
+    foreach ($arreglo as $numero) {
+        if ($numero > $maximo) {
+            $maximo = $numero;
+        }
+    }
+    echo "El valor máximo es: $maximo";
 }
 
 //Tests

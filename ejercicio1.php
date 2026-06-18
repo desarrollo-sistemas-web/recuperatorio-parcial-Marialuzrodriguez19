@@ -5,6 +5,12 @@
 
 function esPositivo($numero){
     //Escribe tu código aquí
+    if($numero = 0){
+         echo "true";
+     }elseif ($numero = 0) {
+         echo "false";
+     }
+     
 }
 
 //Tests with assert

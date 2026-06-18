@@ -5,9 +5,9 @@
 
 function saludar($nombre){
     //Escribe tu código aquí
-    
+    echo "hola, $nombre!";
 }
-
+saludar("juan");
 //Tests
 assert("¡Hola, Juan!" == saludar("Juan"), "Saludo a Juan");
 assert("¡Hola, Maria!" == saludar("Maria"), "Saludo a Maria");

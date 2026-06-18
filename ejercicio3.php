@@ -3,9 +3,14 @@
 // Ejercicio 3: Escribe una función llamada obtenerFactorial que tome un número entero no negativo como parámetro y calcule su factorial. El factorial de un número se obtiene multiplicando todos los números enteros positivos desde 1 hasta el número dado.
 // Complejidad: MEDIA (2 puntos)
 
-function obtenerFactorial($numero){
-    //Escribe tu código aquí
+function obtenerFactorial($num) {
+    $resultado = 1;
+    for ($i = 1; $i <= $num; $i++) {
+        $resultado = $resultado * $i;
+    }
+    echo "el factorial de $num es: $resultado";
 }
+obtenerFactorial(10);
 
 //Tests
 assert(1 == obtenerFactorial(0), "El factorial de 0 es 1");
